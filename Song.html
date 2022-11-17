@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Song</title>
+        <script>
+            var song = {
+                name: "Walk This Way",
+                artist: "Run-D.M.C.",
+                minutes: 4,
+                seconds: 3,
+                genre: "80s",
+                playnig: false,
+
+                play: function() {
+                    if (!this.playnig) {
+                       this.playnig = true;
+                       console.log("Playing " + this.name + " by " + this.artist);
+                }    
+                },
+
+                pause: function () {
+                    if (this.playnig) {
+                        this.playnig = false;
+                    }
+                }
+            };
+
+            song.play();
+            song.pause();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
